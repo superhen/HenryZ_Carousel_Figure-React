@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrap {
+    position: relative;
+    height: 350px;
+    width: 700px;
+}
+.list {
+    position: relative;
+}
+.list .item{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.list .item.active{
+    z-index: 1;
+}
+.btn{
+    top:50%;
+    z-index: 1000;
+    position: absolute;
+    width: 25px;
+    height: 100px;
+    background-color:rgba(0,0,0,0.4);
+    color: rgba(255,255,255,0.6);
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%)
+}
+.btn:hover{
+    background-color: rgba(0,0,0,0.9);
+    ;
+    color:rgba(255, 255, 255, 1)
+}
+.btn.left{
+    left: 0;
+}
+.btn.right{
+    right: 0;
+}
